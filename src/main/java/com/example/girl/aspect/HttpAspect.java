@@ -52,6 +52,6 @@ public class HttpAspect {
 
   @AfterReturning(returning = "object",pointcut = "log()")
   public void doAfterReturning(Object object) {
-   // logger.info("respone={}", object.toString());
+    logger.info("respone={}", object.toString());
   }
 }
